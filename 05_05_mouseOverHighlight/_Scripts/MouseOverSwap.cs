@@ -11,7 +11,7 @@ public class MouseOverSwap : MonoBehaviour
 	// reference to renderer so we can change materials
 	private MeshRenderer _meshRenderer;
 
-	void Start()
+	void Awake()
 	{		
 		// get reference to renderer
 		_meshRenderer = GetComponent<MeshRenderer>();

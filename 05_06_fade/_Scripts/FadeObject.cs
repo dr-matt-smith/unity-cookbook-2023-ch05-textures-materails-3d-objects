@@ -27,10 +27,10 @@ public class FadeObject: MonoBehaviour
 	private bool isFading = false;
 
 	/* ----------------------------------------
-	 * At Start, adjust object's material to desired alpha value, and also 
+	 * At Awake, adjust object's material to desired alpha value, and also 
 	 * calculate difference between initial and final alpha values
 	 */
-	void Start () 
+	void Awake () 
 	{
 		// store reference to object's meshRenderer component into 'meshRenderer' variable
 		meshRenderer = GetComponent<MeshRenderer>();
